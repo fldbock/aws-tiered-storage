@@ -1,12 +1,9 @@
 Description: "Tiered Storage with S3 File Gateway, this template MUST be used in us-east-1"
 Parameters:
-  KeyPairName:
-    Description: KeyPair for Instances
-    Type: AWS::EC2::KeyPair::KeyName
-  UbuntuAMI:
-    Description: AMI For Ubuntu
-    Type: String
-    Default: "ami-03a2cbdcd9e7d1955"
+  LatestAmiId:
+    Description: AMI for any EC2 Instances (if applicable) (default is latest AmaLinux2)
+    Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
+    Default: '/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2'
 Resources:
   OnpremVPC:
     Type: AWS::EC2::VPC
@@ -41,7 +38,7 @@ Resources:
     Type: AWS::EC2::Subnet
     Properties:
       VpcId: !Ref OnpremVPC
-      AvailabilityZone: !Select [ 0, !GetAZs '' ]
+      AvailabilityZone: !Select [ 1, !GetAZs '' ]
       CidrBlock: 10.0.0.128/25
       MapPublicIpOnLaunch: true
       Tags:
@@ -82,6 +79,31 @@ Resources:
       DestinationCidrBlock: '0.0.0.0/0'
       GatewayId:
         Ref: OnpremIGW
+  GeneralSGIPv4:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      VpcId: !Ref OnpremVPC
+      GroupDescription: Default A4L AWS SG
+      SecurityGroupIngress:
+        - Description: 'Allow SSH IPv4 IN'
+          IpProtocol: tcp
+          FromPort: '22'
+          ToPort: '22'
+          CidrIp: '0.0.0.0/0'
+        - Description: 'Allow HTTP IPv4 IN'
+          IpProtocol: tcp
+          FromPort: '80'
+          ToPort: '80'
+          CidrIp: '10.0.0.0/24'
+        - Description: 'Allow HTTPS IPv4 IN'
+          IpProtocol: tcp
+          FromPort: '443'
+          ToPort: '443'
+          CidrIp: '10.0.0.0/24'
+      SecurityGroupEgress:
+        - Description: 'Allow all IPv4 Out'
+          CidrIp: 0.0.0.0/0
+          IpProtocol: "-1"
   OnpremInstanceSG:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
@@ -96,6 +118,42 @@ Resources:
         - Description: 'Allow ALL from ONPREM Networks'
           IpProtocol: "-1"
           CidrIp: '10.0.0.0/24'
+  ssminterfaceendpoint:
+    Type: AWS::EC2::VPCEndpoint
+    Properties:
+      VpcEndpointType: "Interface"
+      PrivateDnsEnabled: "True"
+      SubnetIds:
+        - !Ref OnpremSNPrivate
+        - !Ref OnpremSNPublic
+      SecurityGroupIds:
+        - !Ref GeneralSGIPv4
+      ServiceName: !Sub com.amazonaws.${AWS::Region}.ssm
+      VpcId: !Ref OnpremVPC
+  ssmec2messagesinterfaceendpoint:
+    Type: AWS::EC2::VPCEndpoint
+    Properties:
+      VpcEndpointType: "Interface"
+      PrivateDnsEnabled: "True"
+      SubnetIds:
+        - !Ref OnpremSNPrivate
+        - !Ref OnpremSNPublic
+      SecurityGroupIds:
+        - !Ref GeneralSGIPv4
+      ServiceName: !Sub com.amazonaws.${AWS::Region}.ec2messages
+      VpcId: !Ref OnpremVPC
+  ssmmessagesinterfaceendpoint:
+    Type: AWS::EC2::VPCEndpoint
+    Properties:
+      VpcEndpointType: "Interface"
+      PrivateDnsEnabled: "True"
+      SubnetIds:
+        - !Ref OnpremSNPrivate
+        - !Ref OnpremSNPublic
+      SecurityGroupIds:
+        - !Ref GeneralSGIPv4
+      ServiceName: !Sub com.amazonaws.${AWS::Region}.ssmmessages
+      VpcId: !Ref OnpremVPC
   SessionManagerRole:
     Type: 'AWS::IAM::Role'
     Properties:
@@ -151,25 +209,20 @@ Resources:
   SessionManagerInstanceProfile:
     Type: 'AWS::IAM::InstanceProfile'
     Properties:
-      Path: /
+      Path: '/'
       Roles:
-        - !Ref SessionManagerRole
-  UBUNTU:
+        - !Ref 'SessionManagerRole'
+  OnpremServer:
     DependsOn: SessionManagerInstanceProfile
     Type: AWS::EC2::Instance
     Properties:
-      ImageId: !Ref 'UbuntuAMI'
+      ImageId: !Ref 'LatestAmiId'
       InstanceType: 't2.micro'
-      IamInstanceProfile: 'SessionManagerInstanceProfile'
+      IamInstanceProfile: !Ref 'SessionManagerInstanceProfile'
       SubnetId: !Ref 'OnpremSNPrivate'
       Tags:
         - Key: Name
-          Value: 'Ubuntu'
+          Value: 'OnpremServer'
       SecurityGroupIds:
         - !Ref OnpremInstanceSG
-      KeyName: !Ref 'KeyPairName'
-      UserData:
-        Fn::Base64: !Sub |
-          #!/bin/bash -xe
-          sudo snap install amazon-ssm-agent --classic
-          sudo snap start amazon-ssm-agent
+
