@@ -19,7 +19,7 @@ We are going to set up a s3 file gateway to implement tiered storage and cross r
 The demo consists of 4 stages, each implementing additional components of the architecture.
 - Stage 1: Create & Active the storage gateway
 - Stage 2: Create the S3 buckets, storage tiering and cross region replication
-- Stage 3: Create a bucket share
+- Stage 3: Create a file share
 - Stage 4: Mount the storage gateway on your local file system
 - Stage 5: Cleanup
 - 
@@ -30,7 +30,7 @@ Make sure you are logged into AWS and in `us-east-1`
 
 - Stage 1: Create & Active the storage gateway
 - Stage 2: Create the S3 buckets, storage tiering and cross region replication
-- Stage 3: Create a bucket share
+- Stage 3: Create a file share
 - Stage 4: Mount the storage gateway on your local file system
 - Stage 5: Cleanup
 
