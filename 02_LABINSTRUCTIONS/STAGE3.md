@@ -1,4 +1,4 @@
-# Tiered Storage with S3 File Gateway - Create the S3 buckets, storage tiering and cross region replication
+# Tiered Storage with S3 File Gateway - Create a file share
 
 - Stage 1: Create & Active the storage gateway 
 - Stage 2: Create the S3 buckets, storage tiering and cross region replication 
@@ -19,3 +19,5 @@ Select "NFS".
 Select the S3 bucket we created previously.
 
 Click <kbd>Create file share</kbd>
+
+Wait for the Status of the file share to be "avaiable" before moving on.
