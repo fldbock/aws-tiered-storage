@@ -7,7 +7,7 @@
 - Stage 5: Cleanup
 
 # Set up your Amazon S3 File Gateway
-Head to the Storage Gateway dashboard: [https://console.aws.amazon.com/storagegateway/home](https:>
+Head to the Storage Gateway dashboard: [https://console.aws.amazon.com/storagegateway/home](https://console.aws.amazon.com/storagegateway/home)
 
 Click on "Create gateway"
 

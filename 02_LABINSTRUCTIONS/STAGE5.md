@@ -8,7 +8,7 @@
 
 # Delete S3 Bucket
 
-Head to the S3 dashboard: [https://s3.console.aws.amazon.com/s3/buckets](https:>
+Head to the S3 dashboard: [https://s3.console.aws.amazon.com/s3/buckets](https://s3.console.aws.amazon.com/s3/buckets)
 
 Select your s3 bucket and click on <kbd>Empty</kbd>.
 
@@ -22,7 +22,7 @@ Type the name of your s3 bucket to confirm you want to delete your bucket.
 
 # Delete Storage Gateway
 
-Head to the Storage Gateway dashboard: [https://console.aws.amazon.com/storagegateway/home](https:>
+Head to the Storage Gateway dashboard: [https://console.aws.amazon.com/storagegateway/home](https://console.aws.amazon.com/storagegateway/home)
 
 Click on <kbd>File shares</kbd> in the menu, select your file share and click <kbd>Actions</kbd> followed by <kbd>Delete file share</kbd> 
 
@@ -30,7 +30,7 @@ Type `Delete` to confirm you want to delete your file share.
 
 # Delete EC2 instance
 
-Head to the EC2 dashboard: [https://console.aws.amazon.com/ec2/home](https:>
+Head to the EC2 dashboard: [https://console.aws.amazon.com/ec2/home](https://console.aws.amazon.com/ec2/home)
  
 Go to "Instances" in the side menu, select the storagegateway-wizard instance and click <kbd>Inner State</kbd> followed by <kbd>Terminate</kbd>, click <kbd>Terminate</kbd> again to confirm you want to terminate the instance.  
 
@@ -38,6 +38,6 @@ Go to "Security Groups" in the side menu and delete the storagegateway-wizard se
 
 # Delete Cloudformation stack
 
-Head to the cloudformation dashboard: [https://console.aws.amazon.com/cloudformation/home](https:>
+Head to the cloudformation dashboard: [https://console.aws.amazon.com/cloudformation/home](https://console.aws.amazon.com/cloudformation/home)
 
 Click on your one-click deployment stack and delete it.

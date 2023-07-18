@@ -6,9 +6,9 @@
 - Stage 4: Mount the storage gateway on your local file system
 - Stage 5: Cleanup
 
-# Creat a file share
+# Create a file share
 
-Head to the Storage Gateway dashboard: [https://console.aws.amazon.com/storagegateway/home](https:>
+Head to the Storage Gateway dashboard: [https://console.aws.amazon.com/storagegateway/home](https://console.aws.amazon.com/storagegateway/home)
 
 In the menu select "File shares" and click "Create file share"
 

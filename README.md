@@ -22,12 +22,10 @@ The demo consists of 4 stages, each implementing additional components of the ar
 - Stage 3: Create a file share
 - Stage 4: Mount the storage gateway on your local file system
 - Stage 5: Cleanup
-- 
+
 ## 1-Click Installs (DO THIS FIRST)
 
 Make sure you are logged into AWS and in `us-east-1`
-
-* 
 
 - [VPC](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://s3.us-east-1.amazonaws.com/flortechconsultancy-cloudformation-templates/aws-tiered-storage/aws-tiered-storage-base-template.yaml&stackName=AWSTieredStorageStack)
 

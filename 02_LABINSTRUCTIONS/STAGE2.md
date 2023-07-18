@@ -7,7 +7,7 @@
 - Stage 5: Cleanup
 
 # Create the first bucket
-Head to the S3 dashboard: [https://s3.console.aws.amazon.com/s3/buckets](https:>
+Head to the S3 dashboard: [https://s3.console.aws.amazon.com/s3/buckets](https://s3.console.aws.amazon.com/s3/buckets)
 
 Click on <kbd>Create bucket</kbd>
 

@@ -8,7 +8,7 @@
 
 # SSH into on premises server
 
-Head to the EC2 dashboard: [https://console.aws.amazon.com/ec2/home](https:>
+Head to the EC2 dashboard: [https://console.aws.amazon.com/ec2/home](https://console.aws.amazon.com/ec2/home)
  
 Go to "Instances", select the OnpremServer instance and click <kbd>Connect</kbd>
 
@@ -36,7 +36,7 @@ Type "touch testfile1.txt" "mkdir testfolder" "touch testfolder/testfile2.txt"
 
 # Check if it worked in S3
 
-Head to the S3 dashboard: [https://s3.console.aws.amazon.com/s3/buckets](https:>
+Head to the S3 dashboard: [https://s3.console.aws.amazon.com/s3/buckets](https://s3.console.aws.amazon.com/s3/buckets)
 
 Click on your bucket name and got "management".
 
