@@ -27,10 +27,10 @@ Make sure you are logged into AWS and in `us-east-1`
 
 ## Architecture Diagrams
 
-- [Stage1](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE1.png)
-- [Stage2](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE2.png)
-- [Stage3](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE3.png)
-- [Stage4](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE4.png)
+- [Stage1 - PNG](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE1.png)
+- [Stage2 - PNG](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE2.png)
+- [Stage3 - PNG](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE3.png)
+- [Stage4 - PNG](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE4.png)
 
 
 
