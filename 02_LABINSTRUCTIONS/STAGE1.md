@@ -1,13 +1,12 @@
 # Tiered Storage with S3 File Gateway - Create & Active the storage gateway
 
+![Architecture](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE1.png)
+
 - Stage 1: Create & Active the storage gateway <= `YOU ARE HERE`
 - Stage 2: Create the S3 buckets, storage tiering and cross region replication
 - Stage 3: Create a file share
 - Stage 4: Mount the storage gateway on your local file system
 - Stage 5: Cleanup
-
-![Architecture](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE1.png)
-
 
 # Set up your Amazon S3 File Gateway
 Head to the Storage Gateway dashboard: [https://console.aws.amazon.com/storagegateway/home](https://console.aws.amazon.com/storagegateway/home)

@@ -1,12 +1,12 @@
 # Tiered Storage with S3 File Gateway - Create a file share
 
+![Architecture](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE3.png)
+
 - Stage 1: Create & Active the storage gateway 
 - Stage 2: Create the S3 buckets, storage tiering and cross region replication 
 - Stage 3: Create a file share <= `YOU ARE HERE`
 - Stage 4: Mount the storage gateway on your local file system
 - Stage 5: Cleanup
-
-![Architecture](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE3.png)
 
 # Create a file share
 
