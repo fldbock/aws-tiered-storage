@@ -43,7 +43,7 @@ Click <kbd>Next</kbd>
 
 Review to make sure everything is filled in correctly.
 
-Click <kbd>Activate gateway </kbd>
+Click <kbd>Activate gateway</kbd>
 
 # Configure your Amazon S3 File Gateway
 
@@ -51,3 +51,6 @@ Wait until the "Configure cache storage" is loaded.
 
 Select "Cache".
 
+Under "CloudWatch alarms" select "No alarm"
+
+Click <kbd>Configure</kbd>

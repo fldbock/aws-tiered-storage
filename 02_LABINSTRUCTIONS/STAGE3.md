@@ -20,4 +20,4 @@ Select the S3 bucket we created previously.
 
 Click <kbd>Create file share</kbd>
 
-Wait for the Status of the file share to be "avaiable" before moving on.
+Wait for the Status of the file share to be "available" before moving on.

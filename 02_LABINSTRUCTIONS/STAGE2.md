@@ -19,7 +19,7 @@ Leave everything else as default and click <kbd>Create bucket</kbd>
 
 # Storage Tiering
 
-Click on your bucket name and got "management".
+Click on your bucket name and go to "management".
 
 Click on "Create lifecycle rule" under "Lifecycle rules".
 
