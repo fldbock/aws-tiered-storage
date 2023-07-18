@@ -1,7 +1,7 @@
 # Tiered Storage with S3 File Gateway - Cleanup
 
-- Stage 1: Create & Active the storage gateway 
-- Stage 2: Create the S3 buckets, storage tiering and cross region replication 
+- Stage 1: Create & Activate the storage gateway
+- Stage 2: Create an S3 bucket with storage tiering
 - Stage 3: Create a file share
 - Stage 4: Mount the storage gateway on your local file system
 - Stage 5: Cleanup <= `YOU ARE HERE`
