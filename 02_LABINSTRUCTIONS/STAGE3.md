@@ -6,6 +6,8 @@
 - Stage 4: Mount the storage gateway on your local file system
 - Stage 5: Cleanup
 
+![Architecture](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE3.png)
+
 # Create a file share
 
 Head to the Storage Gateway dashboard: [https://console.aws.amazon.com/storagegateway/home](https://console.aws.amazon.com/storagegateway/home)

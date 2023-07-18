@@ -6,6 +6,8 @@
 - Stage 4: Mount the storage gateway on your local file system
 - Stage 5: Cleanup
 
+![Architecture](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE2.png)
+
 # Create the first bucket
 Head to the S3 dashboard: [https://s3.console.aws.amazon.com/s3/buckets](https://s3.console.aws.amazon.com/s3/buckets)
 

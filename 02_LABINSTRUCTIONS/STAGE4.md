@@ -6,6 +6,8 @@
 - Stage 4: Mount the storage gateway on your local file system <= `YOU ARE HERE`
 - Stage 5: Cleanup
 
+![Architecture](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE4.png)
+
 # SSH into on premises server
 
 Head to the EC2 dashboard: [https://console.aws.amazon.com/ec2/home](https://console.aws.amazon.com/ec2/home)
