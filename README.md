@@ -26,11 +26,18 @@ The demo consists of 4 stages, each implementing additional components of the ar
 ## 1-Click Installs (DO THIS FIRST)
 
 Make sure you are logged into AWS and in `us-east-1`
+
+* 
+
+- [VPC](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://s3.us-east-1.amazonaws.com/flortechconsultancy-cloudformation-templates/aws-tiered-storage/aws-tiered-storage-base-template.yaml&stackName=AWSTieredStorageStack)
+
 ## Instructions
 
-- Stage 1: Create & Active the storage gateway
-- Stage 2: Create the S3 buckets, storage tiering and cross region replication
-- Stage 3: Create a file share
-- Stage 4: Mount the storage gateway on your local file system
-- Stage 5: Cleanup
+- [Stage1](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE1.md)
+- [Stage2](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE2.md)
+- [Stage3](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE3.md)
+- [Stage4](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE4.md)
+- [Stage5](https://github.com/fldbock/aws-tiered-storage/blob/main/02_LABINSTRUCTIONS/STAGE5.md)
+
+
 
