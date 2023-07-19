@@ -11,7 +11,7 @@
 # Create the S3 File Gateway
 Head to the Storage Gateway dashboard: [https://console.aws.amazon.com/storagegateway/home](https://console.aws.amazon.com/storagegateway/home)
 
-Click `Create gateway`
+Click <kbd>Create gateway</kbd>
 
 Pick a `Gateway name`, I'll use `s3-file-gateway`
 
