@@ -18,23 +18,28 @@ Select `Session manager` and click <kbd>Connect</kbd>
 
 # Mount onto storage gateway
 
-Type `bash` and `cd`. 
+Type `sudo bash` and press enter
+Type`cd` and press enter
 
-Type `sudo yum install nfs-utils` to install the NFS client packages
+First we need to install the amazon EFS utilities to allow the instance to connect to EFS. EFS is based on NFS which is standard but the EFS tooling makes things easier.
 
-Type `mkdir shared-files` 
+```sudo yum install nfs-utils```
 
-Type `sudo mount -t nfs -o nolock,hard 10.0.0.234:/s3-file-gateway-bucket-1155 shared-files`
-
+Next we need to create a new folder where we will mount the storage gateway on.
+You can find the private ip address of your storage gateway instance either by clicking on your storage gateway instance in the EC2 service console or by clicking on your storage gateway in the Storage Gateway service console.
+```
+mkdir shared-files
+sudo mount -t nfs -o nolock,hard IPSTORAGEGATEWAYINSTANCE:/s3-file-gateway-bucket-1155 shared-files
+```
 
 # Create files
 
-Type `cd shared-files/`
-
 Let's create a test folder and some test files
 
-Type `touch testfile1.txt && mkdir testfolder && touch testfolder/testfile2.txt`
-
+```
+cd shared-files/
+touch testfile1.txt && mkdir testfolder && touch testfolder/testfile2.txt
+```
 
 # Check if it worked in S3
 
