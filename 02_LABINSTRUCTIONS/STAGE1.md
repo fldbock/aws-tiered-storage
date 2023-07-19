@@ -33,25 +33,25 @@ Click <kbd>Launch instance</kbd> and wait until the EC2 instance is launched, th
 
 Leave `IP address` as the connection option
 
-The public IP adress should have been automatically pre filled.
+The public IP adress should have been automatically pre filled
 
-Under `Service endpoint`, leave `Publicly accessible` selected.
+Under `Service endpoint`, leave `Publicly accessible` selected
 
 Click <kbd>Next</kbd>
 
 # Review and activate
 
-Review to make sure everything is filled in correctly.
+Review to make sure everything is filled in correctly
 
 Click <kbd>Activate gateway</kbd>
 
 # Configure the S3 File Gateway
 
-Wait until the `Configure cache storage` is loaded, then select `Cache`.
+Wait until the `Configure cache storage` is loaded, then select `Cache`
 
 Under `CloudWatch alarms` select `No alarm`
 
 Click <kbd>Configure</kbd>
 
 We now have a working storage gateway instance in our public subnet, which is connected to AWS, activated and configured. 
-In the next stage we will create the S3 bucket with storage tiering where the actual data will be stored.
+In the next stage we will create the S3 bucket with storage tiering, where the actual data will be stored.
