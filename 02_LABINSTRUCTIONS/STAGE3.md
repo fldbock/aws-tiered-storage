@@ -12,14 +12,14 @@
 
 Head to the Storage Gateway dashboard: [https://console.aws.amazon.com/storagegateway/home](https://console.aws.amazon.com/storagegateway/home)
 
-In the menu select "File shares" and click "Create file share"
+In the menu select `File shares` and click <kbd>Create file share</kbd>
 
-Under "Gateway" select the gateway we just created.
+Under `Gateway` select the gateway we just created
 
-Select "NFS".
+Select `NFS`
 
-Select the S3 bucket we created previously.
+Select the S3 bucket we created previously
 
 Click <kbd>Create file share</kbd>
 
-Wait for the Status of the file share to be "available" before moving on.
+Wait for the Status of the file share to be `available` before moving on
