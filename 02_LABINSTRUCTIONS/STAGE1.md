@@ -21,23 +21,21 @@ Set `Host platform` to `Amazon EC2`
 
 Keep `Use default settings` selected
 
-Select `onprem-vpc`
+Under `VPC` select `onprem-vpc`
 
-Select `sn-onprem-vpc-public`
+Under `Subnets` select `sn-onprem-vpc-public`
 
-Select a key pair.
+Select a key pair
 
-Click <kbd>Launch instance</kbd> and wait until the EC2 instance is launched.
-
-Click <kbd>Next</kbd>
+Click <kbd>Launch instance</kbd> and wait until the EC2 instance is launched, then click <kbd>Next</kbd>
 
 # Connect the S3 File Gateway to AWS
 
-Leave "IP address" as the connection option
+Leave `IP address` as the connection option
 
 The public IP adress should have been automatically pre filled.
 
-Under Service endpoint, leave "Publicly accessible" selected.
+Under `Service endpoint`, leave `Publicly accessible` selected.
 
 Click <kbd>Next</kbd>
 
@@ -49,10 +47,8 @@ Click <kbd>Activate gateway</kbd>
 
 # Configure the S3 File Gateway
 
-Wait until the "Configure cache storage" is loaded.
+Wait until the `Configure cache storage` is loaded, then select `Cache`.
 
-Select "Cache".
-
-Under "CloudWatch alarms" select "No alarm"
+Under `CloudWatch alarms` select `No alarm`
 
 Click <kbd>Configure</kbd>
