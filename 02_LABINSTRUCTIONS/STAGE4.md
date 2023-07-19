@@ -8,7 +8,7 @@
 - Stage 4: Mount the storage gateway on your local file system <= `YOU ARE HERE`
 - Stage 5: Cleanup
 
-# SSH into on premises server
+# Session manager
 
 Head to the EC2 dashboard: [https://console.aws.amazon.com/ec2/home](https://console.aws.amazon.com/ec2/home)
  
