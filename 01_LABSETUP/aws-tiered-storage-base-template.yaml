@@ -83,7 +83,7 @@ Resources:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
       VpcId: !Ref OnpremVPC
-      GroupDescription: Default A4L AWS SG
+      GroupDescription: Onprem Default SG
       SecurityGroupIngress:
         - Description: 'Allow SSH IPv4 IN'
           IpProtocol: tcp
@@ -108,7 +108,7 @@ Resources:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
       VpcId: !Ref OnpremVPC
-      GroupDescription: Default A4L AWS SG
+      GroupDescription: Onprem EC2 instances SG
       SecurityGroupIngress:
         - Description: 'Allow SSH IPv4 IN'
           IpProtocol: tcp
