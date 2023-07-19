@@ -49,4 +49,5 @@ Click on your bucket name and go to `management`
 
 Now you can verify that the files and folders are in your bucket
 
-Congratulations!
+Congratulations! At this point you have a working storage gateway with storage tiering, which will save your company money if you have files that aren't frequently accessed, and you can't mount the storage gateway as an nfs file server on your on premises hosts.
+In the next stage we will clear up all of the services that we used.
