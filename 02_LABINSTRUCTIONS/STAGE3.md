@@ -23,3 +23,6 @@ Select the S3 bucket we created previously
 Click <kbd>Create file share</kbd>
 
 Wait for the Status of the file share to be `available` before moving on
+
+We now have a file share which connects the storage gateway with our S3 bucket.
+In the next stage we will mount this on our local filesystem in our on premisses server.
