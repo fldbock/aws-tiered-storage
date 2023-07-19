@@ -10,34 +10,34 @@
 
 Head to the S3 dashboard: [https://s3.console.aws.amazon.com/s3/buckets](https://s3.console.aws.amazon.com/s3/buckets)
 
-Select your s3 bucket and click on <kbd>Empty</kbd>.
+Select your s3 bucket and click on <kbd>Empty</kbd>
 
-Type `permanently delete` to confirm you want to empty your bucket.
+Type `permanently delete` to confirm you want to empty your bucket
 
 Click <kbd>Exit</kbd>
 
 Select your s3 bucket again and click on <kbd>Delete</kbd>
 
-Type the name of your s3 bucket to confirm you want to delete your bucket.
+Type the name of your s3 bucket to confirm you want to delete your bucket
 
-# Delete Storage Gateway
+# Delete the Storage Gateway
 
 Head to the Storage Gateway dashboard: [https://console.aws.amazon.com/storagegateway/home](https://console.aws.amazon.com/storagegateway/home)
 
 Click on <kbd>File shares</kbd> in the menu, select your file share and click <kbd>Actions</kbd> followed by <kbd>Delete file share</kbd> 
 
-Type `Delete` to confirm you want to delete your file share.
+Type `Delete` to confirm you want to delete your file share
 
-# Delete EC2 instance
+# Delete the storage gateway instance
 
 Head to the EC2 dashboard: [https://console.aws.amazon.com/ec2/home](https://console.aws.amazon.com/ec2/home)
  
-Go to "Instances" in the side menu, select the storagegateway-wizard instance and click <kbd>Inner State</kbd> followed by <kbd>Terminate</kbd>, click <kbd>Terminate</kbd> again to confirm you want to terminate the instance.  
+Go to `Instances` in the side menu, select the storagegateway-wizard instance and click <kbd>Inner State</kbd> followed by <kbd>Terminate</kbd>, click <kbd>Terminate</kbd> again to confirm you want to terminate the instance
 
-Go to "Security Groups" in the side menu and delete the storagegateway-wizard security group. (You can only do this when the storagegatway-wizard ec2 instance is terminated).
+Go to `Security Groups` in the side menu and delete the storagegateway-wizard security group. (You can only do this when the storagegatway-wizard ec2 instance is terminated)
 
-# Delete Cloudformation stack
+# Delete the Cloudformation stack
 
 Head to the cloudformation dashboard: [https://console.aws.amazon.com/cloudformation/home](https://console.aws.amazon.com/cloudformation/home)
 
-Click on your one-click deployment stack and delete it.
+Click on your one-click deployment stack and delete it
