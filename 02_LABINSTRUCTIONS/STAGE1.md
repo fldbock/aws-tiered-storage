@@ -52,3 +52,6 @@ Wait until the `Configure cache storage` is loaded, then select `Cache`.
 Under `CloudWatch alarms` select `No alarm`
 
 Click <kbd>Configure</kbd>
+
+We now have a working storage gateway instance in our public subnet, which is connected to AWS, activated and configured. 
+In the next stage we will create the S3 bucket with storage tiering where the actual data will be stored.
