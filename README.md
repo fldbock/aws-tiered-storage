@@ -1,6 +1,6 @@
 # Tiered Storage with S3 File Gateway
 
-In this demo, you will configure a s3 file gateway, allowing on premises servers to use it as an nfs server, with the added benefit of saving costs by using s3 for storage tiering
+In this demo, you will configure a s3 file gateway, allowing on premises servers to use it as a nfs server, with the added benefit of saving costs by using s3 for storage tiering
 
 The demo consists of 5 stages, each implementing additional components of the architecture
 - Stage 1: Create & Activate the storage gateway

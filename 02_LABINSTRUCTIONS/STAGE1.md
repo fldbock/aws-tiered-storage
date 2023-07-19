@@ -35,7 +35,7 @@ Click <kbd>Launch instance</kbd> and wait until the EC2 instance is launched, th
 
 Leave `IP address` as the connection option
 
-The public IP adress should have been automatically filled in
+The public IP address should have been automatically filled in
 
 Under `Service endpoint`, leave `Publicly accessible` selected
 
