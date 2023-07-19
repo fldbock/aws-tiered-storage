@@ -31,8 +31,7 @@ Set the `Prefix` to `/`
 
 Under `Lifecycle rule actions` select `Move current versions of objects between storage classes`
 
-Under `Choose storage class transitions
-D` select `Standard-IA` 
+Under `Choose storage class transitions` select `Standard-IA` 
 
 Change `Days after object creation` to `30`
 

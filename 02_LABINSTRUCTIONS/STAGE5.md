@@ -26,13 +26,17 @@ Head to the Storage Gateway dashboard: [https://console.aws.amazon.com/storagega
 
 Click on <kbd>File shares</kbd> in the menu, select your file share and click <kbd>Actions</kbd> followed by <kbd>Delete file share</kbd> 
 
-Type `Delete` to confirm you want to delete your file share
+Type `delete` to confirm you want to delete your file share
+
+Click on <kbd>Gateways</kbd> in the menu, select your s3 file gateway and click <kbd>Actions</kbd> followed by <kbd>Delete gateway</kbd> 
+
+Type `delete` to confirm you want to delete your file share
 
 # Delete the storage gateway instance
 
 Head to the EC2 dashboard: [https://console.aws.amazon.com/ec2/home](https://console.aws.amazon.com/ec2/home)
  
-Go to `Instances` in the side menu, select the storagegateway-wizard instance and click <kbd>Inner State</kbd> followed by <kbd>Terminate</kbd>, click <kbd>Terminate</kbd> again to confirm you want to terminate the instance
+Go to `Instances` in the side menu, select the storagegateway-wizard instance and click <kbd>Inner State</kbd> followed by <kbd>Terminate instance</kbd>, click <kbd>Terminate</kbd> again to confirm you want to terminate the instance
 
 Go to `Security Groups` in the side menu and delete the storagegateway-wizard security group. (You can only do this when the storagegatway-wizard ec2 instance is terminated)
 

@@ -16,13 +16,13 @@ In the menu select `File shares` and click <kbd>Create file share</kbd>
 
 Under `Gateway` select the gateway we just created
 
-Select `NFS`
+Under `File share protocol` select `NFS`
 
 Select the S3 bucket we created previously
 
 Click <kbd>Create file share</kbd>
 
-Wait for the Status of the file share to be `available` before moving on
+Wait for the Status of the file share to be `available` before moving on (it should go from `pending` to `unavailable` to `available`)
 
 We now have a file share which connects the storage gateway with our S3 bucket.
-In the next stage we will mount this on our local filesystem in our on premisses server.
+In the next stage we will mount this on our local filesystem in our on-premises server.

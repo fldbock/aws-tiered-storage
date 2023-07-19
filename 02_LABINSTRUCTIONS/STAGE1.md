@@ -17,15 +17,17 @@ Pick a `Gateway name`, I'll use `s3-file-gateway`
 
 Under `Gateway time zone`, select your current time zone
 
+Under `Gateway type`, select `Amazon S3 File Gateway`
+
 Set `Host platform` to `Amazon EC2`
 
 Keep `Use default settings` selected
 
-Under `VPC` select `onprem-vpc`
+Under `Virtual private cloud (VPC) network` select the `onprem-vpc`
 
-Under `Subnets` select `sn-onprem-vpc-public`
+Under `Subnets` select the `sn-onprem-vpc-public`
 
-Select a key pair
+Select a key pair (you might have to create one first)
 
 Click <kbd>Launch instance</kbd> and wait until the EC2 instance is launched, then click <kbd>Next</kbd>
 
@@ -33,7 +35,7 @@ Click <kbd>Launch instance</kbd> and wait until the EC2 instance is launched, th
 
 Leave `IP address` as the connection option
 
-The public IP adress should have been automatically pre filled
+The public IP adress should have been automatically filled in
 
 Under `Service endpoint`, leave `Publicly accessible` selected
 
