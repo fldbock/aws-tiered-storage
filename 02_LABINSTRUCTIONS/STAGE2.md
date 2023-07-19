@@ -13,7 +13,7 @@ Head to the S3 dashboard: [https://s3.console.aws.amazon.com/s3/buckets](https:/
 
 Click <kbd>Create bucket</kbd>
 
-Pick a `Bucket Name`, I'll use `3-file-gateway-bucket-7733` (The bucket name must be globally unique so you will have to choose a different name)
+Pick a `Bucket Name`, I'll use `s3-file-gateway-bucket-7733` (The bucket name must be globally unique so you will have to choose a different name)
 
 Set the region to `us-east-1` or whichever region you’re using
 
@@ -29,7 +29,7 @@ Pick a `Lifecycle rule name`, I'll use `infrequent-access-rule`
 
 Set the `Prefix` to `/`
 
-Under `Lifecycle rule actions` choose `Move current versions of objects between storage classes`
+Under `Lifecycle rule actions` select `Move current versions of objects between storage classes`
 
 Under `Choose storage class transitions
 D` select `Standard-IA` 
@@ -37,3 +37,4 @@ D` select `Standard-IA`
 Change `Days after object creation` to `30`
 
 Leave everything else as default and click <kbd>Create Rule</kbd>
+
