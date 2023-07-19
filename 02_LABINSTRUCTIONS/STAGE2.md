@@ -8,7 +8,7 @@
 - Stage 4: Mount the storage gateway on your local file system
 - Stage 5: Cleanup
 
-# Create the first bucket
+# Create the S3 bucket
 Head to the S3 dashboard: [https://s3.console.aws.amazon.com/s3/buckets](https://s3.console.aws.amazon.com/s3/buckets)
 
 Click <kbd>Create bucket</kbd>
@@ -38,3 +38,5 @@ Change `Days after object creation` to `30`
 
 Leave everything else as default and click <kbd>Create Rule</kbd>
 
+We now have an S3 bucket with storage tiering, where our data can be stored.
+In the next stage we will create a file share to connect the storage gateway with our S3 bucket.
